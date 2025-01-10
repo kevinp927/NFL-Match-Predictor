@@ -72,11 +72,8 @@ class MissingDict(dict): ## creating a class that inherits from the dictionary c
     __missing__ = lambda self, key: key ## in case a team name is missing
 
 map_values = {
-    "Brighton and Hove Albion": "Brighton",
-    "Manchester United": "Manchester Utd",
-    "Tottenham Hotspur": "Tottenham", 
-    "West Ham United": "West Ham", 
-    "Wolverhampton Wanderers": "Wolves"
+    "Atlanta Falcons": "Falcons",
+    "Chicago Bears": "Bears",
 }
 mapping = MissingDict(**map_values)
 mapping["West Ham United"]
